@@ -1,8 +1,8 @@
 package AnyEvent::JSONRPC::Client;
 
-use Any::Moose;
+use Moose;
 
-no Any::Moose;
+no Moose;
 
 __PACKAGE__->meta->make_immutable;
 

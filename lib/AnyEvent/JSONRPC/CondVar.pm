@@ -1,5 +1,5 @@
 package AnyEvent::JSONRPC::CondVar;
-use Any::Moose;
+use Moose;
 
 use AnyEvent;
 
@@ -19,7 +19,7 @@ has call => (
     handles  => [qw( is_notification )], 
 );
 
-no Any::Moose;
+no Moose;
 
 sub result {
     my ($self, @result) = @_;

@@ -1,5 +1,5 @@
 package AnyEvent::JSONRPC::InternalHandle;
-use Any::Moose;
+use Moose;
 
 use AnyEvent;
 
@@ -12,7 +12,7 @@ has cv => (
     handles => [qw( recv cb )],
 );
 
-no Any::Moose;
+no Moose;
 
 sub push_write {
     my ($self, $type, $json) = @_;

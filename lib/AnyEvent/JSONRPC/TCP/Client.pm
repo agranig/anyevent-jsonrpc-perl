@@ -1,6 +1,6 @@
 package AnyEvent::JSONRPC::TCP::Client;
-use Any::Moose;
-use Any::Moose '::Util::TypeConstraints';
+use Moose;
+use Moose::Util::TypeConstraints;
 
 extends 'AnyEvent::JSONRPC::Client';
 
@@ -84,7 +84,7 @@ has _connection_guard => (
     isa => 'Object',
 );
 
-no Any::Moose;
+no Moose;
 
 sub BUILD {
     my $self = shift;
